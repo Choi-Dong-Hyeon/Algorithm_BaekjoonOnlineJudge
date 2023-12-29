@@ -1,0 +1,36 @@
+segment .data
+input db '%d %d',0
+output db '%d',0
+
+num1 times 4 db 0
+num2 times 4 db 0
+
+segment .text
+global main
+extern printf
+extern scanf
+main:
+
+    push eax
+    push ecx
+    
+    push num1
+    push num2
+    push input
+    call scanf
+    add esp,12
+    
+    mov eax,[num1]
+    mov ecx,[num2]
+    mul ecx
+    push eax
+    push output
+    call printf
+    
+    add esp,8
+    pop ecx
+    pop eax
+    mov eax,0
+    
+
+    ret
