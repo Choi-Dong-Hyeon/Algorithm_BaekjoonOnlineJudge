@@ -1,0 +1,38 @@
+segment .bss
+num1 resd 1
+num2 resd 1
+
+segment .data
+input db '%d %d'
+output db '%d'
+
+segment .text
+global main
+extern printf
+extern scanf
+main:
+    mov ebp, esp; for correct debugging
+
+    push eax
+    push edx
+
+    push num1
+    push num2
+    push input
+    call scanf
+    add esp,12
+    
+    mov eax,[num2]
+    mov edx,[num1]
+    sub eax,edx
+    
+    push eax
+    push output
+    call printf
+    add esp,8
+
+    pop eax
+    pop edx
+
+    xor eax,eax
+    ret
