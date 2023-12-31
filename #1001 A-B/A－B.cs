@@ -1,23 +1,19 @@
-    internal class Program
+using System;
+
+internal class Program
+{
+    static void Main(string[] args)
     {
 
-        static void Main(string[] args)
-        {
+        string[] nums;
+        int sum;
 
-           string[] nums= Console.ReadLine().Split();
+        nums = Console.ReadLine().Split();
+        int input1 = Convert.ToInt32(nums[0]);
+        int input2 = Convert.ToInt32(nums[1]);
+        sum = input1 - input2;
 
-           int A= int.Parse(nums[0]);
-           int B= int.Parse(nums[1]);
-
-
-
-            Console.WriteLine(Sum(A, B));
-
-            int Sum(int a, int b)
-            {
-                return a - b;
-            }
-
-        }
-
+        Console.WriteLine(sum);
     }
+}
+

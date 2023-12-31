@@ -1,8 +1,8 @@
-# <img width="20px"  src="https://d2gd6pc034wcta.cloudfront.net/tier/1.svg" class="solvedac-tier"> [A-B](https://www.acmicpc.net/problem/1001) 
+#  [A-B](https://www.acmicpc.net/problem/1001) 
 
 | 제출 번호 | 닉네임 | 채점 결과 | 메모리 | 시간 | 언어 | 코드 길이 |
 |---|---|---|---|---|---|---|
-|59454948|dong_hyeon|맞았습니다!! |5512KB|72ms|C#|371B|
+|70971447|vwwwwvww|맞았습니다!! |5536KB|64ms|C#|334B|
 
 ## 문제
 <p>두 정수 A와 B를 입력받은 다음, A-B를 출력하는 프로그램을 작성하시오.</p>
